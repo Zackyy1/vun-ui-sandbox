@@ -1,13 +1,14 @@
-// import { Button } from '@zackyy1/vun-ui'
+import {
+  BodyText,
+  Button,
+  Card,
+  Code,
+  Container,
+  Heading,
+  Slider,
+} from "@zackyy1/vun-ui";
 import React from "react";
 import Header from "../Header/Header";
-import BodyText from "../libraryComponents/BodyText/BodyText";
-import Button from "../libraryComponents/Button";
-import Card from "../libraryComponents/Card/Card";
-import Code from "../libraryComponents/Code/Code";
-import Container from "../libraryComponents/Container";
-import Heading from "../libraryComponents/Heading/Heading";
-import Slider from "../libraryComponents/Inputs/Slider";
 import "./Showcase.scss";
 
 const Showcase = () => {
@@ -47,6 +48,10 @@ const Showcase = () => {
             <Code inline>App.js</Code> using{" "}
             <Code inline>import '@zackyy1/vun-ui/dist/cjs/output.css'</Code>
           </BodyText>
+          <BodyText>
+            You can now use Vun components in your project by importing them:
+          </BodyText>
+          <Code>{`import {BodyText, Button, Card, Code, Container, Heading, Slider} from "@zackyy1/vun-ui"`}</Code>
         </section>
         <Heading tag="h2">Components</Heading>
         <section id="cards">
@@ -120,8 +125,8 @@ const Showcase = () => {
 </Code>
 
 <Code>
-  \{\`code goes here
-  and on the new lines without additional formatting\`\}
+  {\`code goes here
+  and on the new lines without additional formatting\`}
 </Code>
 
 <BodyText>
