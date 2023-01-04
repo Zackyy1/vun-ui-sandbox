@@ -1,0 +1,43 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.showcase {
+    .vcontainer>section {
+        margin: 32px 0;
+        position: relative;
+        padding-bottom: 32px;
+
+        >.vheading {
+            h3 {
+                margin: 24px 0;
+            }
+
+            margin-top: 24px;
+        }
+
+        &::before {
+            // horizontal line
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: $neu-dark;
+            z-index: 1;
+        }
+    }
+
+    .row-3 {
+        margin-bottom: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    @include mobile {
+        .row-3 {
+            grid-template-columns: 1fr;
+        }
+    }
+}

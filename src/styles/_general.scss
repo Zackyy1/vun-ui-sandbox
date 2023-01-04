@@ -1,0 +1,46 @@
+@import './variables';
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: $neu-main;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: black;
+}
+
+button {
+    background-color: $neu-main;
+    border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+tr,
+td,
+th,
+table {
+    margin: 0;
+    padding: 0;
+}
