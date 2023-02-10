@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "update-vun",
+			"problemMatcher": [],
+			"label": "npm i @zackyy1/vun-ui@latest",
+			"detail": "npm i @zackyy1/vun-ui@latest"
+		}
+	]
+}
